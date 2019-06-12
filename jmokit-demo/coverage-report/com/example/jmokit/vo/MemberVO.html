@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MemberVO.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>jmokit-demo\src\main\java\com\example\jmokit\vo\MemberVO.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.example.jmokit.vo;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import lombok.Data;
+
+import java.util.Date;
+    <tr>
+      <td></td><td class='count'>0</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#ff0000' onclick='hidePath()'>Path coverage: 0/64</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">A: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">B: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">C: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">D: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">E: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">F: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">G: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">H: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">I: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">J: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">K: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">L: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">M: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">N: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">O: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">P: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">Q: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">R: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">S: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">T: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">U: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">V: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">W: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">X: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">Y: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">Z: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">AA: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">AB: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">AC: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">AD: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">AE: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s2 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">AF: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">AG: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">AH: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">AI: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">AJ: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">AK: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">AL: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">AM: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">AN: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">AO: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">AP: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">AQ: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">AR: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">AS: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">AT: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">AU: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s5 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">AV: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">AW: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">AX: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">AY: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">AZ: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">BA: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">BB: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">BC: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s8 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">BD: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s17 l7s18')">BE: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s14 l7s15 l7s16 l7s18')">BF: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s17 l7s18')">BG: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s11 l7s12 l7s13 l7s15 l7s16 l7s18')">BH: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s17 l7s18')">BI: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s14 l7s15 l7s16 l7s18')">BJ: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s17 l7s18')">BK: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l7s0 l7s1 l7s3 l7s4 l7s6 l7s7 l7s9 l7s10 l7s12 l7s13 l7s15 l7s16 l7s18')">BL: 0</span>
+      </td>
+    </tr>
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>7</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>@Data</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>8</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class MemberVO {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>9</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private Long <span class='instance uncovered' title='Reads: 0 Writes: 0'>userNo</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>10</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private String <span class='instance uncovered' title='Reads: 0 Writes: 0'>userName</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>11</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private Date <span class='instance uncovered' title='Reads: 0 Writes: 0'>birthday</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private Integer <span class='instance uncovered' title='Reads: 0 Writes: 0'>sex</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>13</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private Boolean <span class='instance uncovered' title='Reads: 0 Writes: 0'>isSeller</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>14</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private StoreVO <span class='instance uncovered' title='Reads: 0 Writes: 0'>storeVO</span>;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>16</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public MemberVO() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>19</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public MemberVO(Long userNo, String userName, Date birthday, Integer sex, Boolean isSeller, StoreVO storeVO) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        this.userNo = userNo;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        this.userName = userName;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>22</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        this.birthday = birthday;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>23</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        this.sex = sex;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>24</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        this.isSeller = isSeller;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>25</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        this.storeVO = storeVO;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>26</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>28</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public String toString() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>30</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        return "MemberVO{" +</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                "userNo=" + userNo +</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>32</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                ", userName='" + userName + '\'' +</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>33</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                ", birthday=" + birthday +</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>34</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                ", sex=" + sex +</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>35</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                ", isSeller=" + isSeller +</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>36</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                '}';</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>37</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>39</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
