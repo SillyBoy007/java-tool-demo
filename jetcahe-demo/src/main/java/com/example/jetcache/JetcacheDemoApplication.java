@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableMethodCache(basePackages = "com.example.jetcache")
 @EnableCreateCacheAnnotation
 @SpringBootApplication
-public class JetcaheDemoApplication {
+public class JetcacheDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JetcaheDemoApplication.class, args);
+        SpringApplication.run(JetcacheDemoApplication.class, args);
     }
 
 }
