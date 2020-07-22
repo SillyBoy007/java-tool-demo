@@ -3,7 +3,6 @@ package com.example.excel.domain;
 import com.example.excel.annotation.Excel;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-
 import java.util.Date;
 
 /**
@@ -71,9 +70,7 @@ public class FollowBaseVO {
     @Excel(name = "备注")
     private String remark;
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
-    @Excel(name = "加好友时间")
-    private Date createTime;
+
 
 
     public Long getUserCode() {
@@ -158,12 +155,6 @@ public class FollowBaseVO {
         this.remark = remark;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
 
 }
