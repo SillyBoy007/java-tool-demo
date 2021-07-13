@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>stream-demo</module>
+        <module>flowEngine</module>
     </modules>
     <packaging>pom</packaging>
 
